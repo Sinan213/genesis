@@ -1,0 +1,122 @@
+<!-- bu kodu yazmamızdaki amac sayfanın bir html sayfası oldugunu bildirmemizdir.-->
+<!-- aksi taktirde sayfamız farklı browserlarda farklı sonuclar verebılır. -->
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--burada ki title sayfanın en ustundeki yenı sekme gibi acıklamaları kapsar  -->
+<title> HTML CSS CALISMALAR </title>
+
+<!-- burada sayfayı türkçe karakterli olarak işaretledik -->
+<meta charset="UTF-8">
+
+<!-- burası açıklama kısmında ogretici web sayfaları olarak girdik -->
+<meta name="description" content="tutorial web pages">
+
+<!-- anahtar kelimelerimi ekledik -->
+<meta name="keywords" content="html, css, javascrip, ögretici calışmalar">
+
+<!-- yazar olarak kimin yazdıgını belirledik -->
+<meta name="author" content="sinan">
+
+<!-- buradaki kod web sayfamızın cesitli genişlik ve yukseklikteki cihazlara uyum sagalayabilmesini sağlar  -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- bu kod hazırladığımız css dosyamızı sayfamıza dahil eder  -->
+<link rel="stylesheet" type="text/css" href="work.css">
+
+
+
+</head>
+
+
+<body>
+
+<!-- bakınız h1 etiketindeki align kelimesi ile yazıyı sayfayı ortalayacak sekilde yazdık -->
+
+<h1 align="middle" >HTML CSS BAŞLANGIÇ ÇALIŞMALARI</h1>
+
+<p>Bu bir html web sayfasıdır</p>
+
+<!-- buradaki <hr> etikedi sayfa boyu uzun çizgi çizer -->
+<hr>
+<!-- buradaki <br> etiketi bir alt satıra atlatma işlemi yapar -->
+<br>
+
+<b>Bu sayfada css kodları da kullanılmıstır</b>
+
+<hr>
+<p>
+<!-- Burada bir button a onclick tetikleyici ile linl verdik ve html ögretici sayfaya yönlendirdik. -->
+<p align="middle">
+<button onclick="window.location.href='https://htmldersleri.org/ornekler/dene.php?dosyaadi=tryhtml5_draganddrop'"><i><small>HTML Tutorial</small></i></button>
+<button onclick="window.location.href='http://www.belgeler.org/hpm/html-php-mysql-giris_prg-html_form.html'"><i><big>HTML Forms</big></i></button>
+
+</p>
+<!--şimdi bir yazıya link verecez -->
+<a align="center" href="https://www.youtube.com/watch?v=655OKqdUoP8&list=LLicH36-owM2JN-IAhqu2VIA&index=780"> <h6><ins>Müzik Dinle</ins></h6> </a> 
+<h3 align="center"><del><big>Mola Ver</big></del>  </h3>
+
+</p>
+<hr>
+
+<!--burada ust yazı veya sayı yazdırıyoruz sup etiketi ile -->
+<p> Sinan<sup>Sancar</sup> </p>
+
+<hr>
+
+<!--burada alt yazı veya sayı yazdırıyoruz sub etiketi ile -->
+<p>Sinan <sub>Koçer</p></p>
+
+<!--asagıda web sayfamızda resim ekleyip göstereceğiz bu resimleri bir bir ağdan ekledik yani sayfanın sonundan ekleyerek geldik -->
+
+<img src="En.jpg" align="right" alt="Eklenen Resim" width="200px" height="300px"/>
+<img src="rm.jpg" align="right" alt="Eklenen Resim" width="200px" height="300px"/>
+<img src="rm.jpg" align="right" alt="Eklenen Resim" width="200px" height="300px"/>
+<img src="rm.jpg" align="right" alt="Eklenen Resim" width="200px" height="300px"/>
+<img src="rm.jpg" align="right" alt="Eklenen Resim" width="200px" height="300px"/>
+<img src="rm.jpg" align="right" alt="Eklenen Resim" width="200px" height="300px"/>
+<img src="En.jpg" align="right" alt="Eklenen Resim" width="40px" height="300px"/>
+
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<!--asagıda bir video ekleme işlemi gerceklestireceğiz -->
+
+<video controls width="1250px" height="100px" ">
+<!--burada wmv videosunu çalmıyor niye çalmıyor hala anlamadık. sonra bakacvagız, birde mp4 dosyası indirip deneyecegiz.  -->
+<!--ayrıca bu vıdeo etıketınde burada nhizalamada yapamıyoruz nedenını arastıracagız. -->
+<source src="Wildlife.wmv" type="video/wmv">
+
+</video>
+
+<!-- burada müzik ekleyecegiz-->
+
+<br> <br>
+
+
+<audio controls  >
+
+<source src="Sleep.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- bu video ve müzik etiketlerinde controls dan zıyade autoplay ve loop özellikleri, vardır. -->
+<!--autoplay özelliği controlsuzce müziği oynatmaya direkt olarak, -->
+<!--loop ozelliği ise bitince müzüiği yeniden baslatmaya yarar.  -->
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

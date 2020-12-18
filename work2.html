@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+<title>Tablo Yapıları ve İnput Özellikleri Html    </title>
+
+<meta name="description"  content="html tablu ve input">
+<meta name="author" content="Sinan">
+<meta name="keywords" content="tablolar, html, forms, input tutorial">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="work.css">
+
+</head>
+
+<body>
+<!--asagıda tablomuzun genişiliğini %100 yaptık birde cercevelerini belirttik -->
+<table  style="width:100%" border="1">
+<tr >
+<!--asagıda yh satırındakı arka plan rengini kırmızı yaptık -->
+<th style="background:red"> ADI</th>
+<th> SOYADI </th>
+<th>  İLİ </th>
+</tr>
+
+
+
+<tr>
+<!-- asagıda td satırı arasındakı yazıyı sagdan hizaladık -->
+<td><p align="right">sinan</p></td>
+<td>sancar</td>
+<td>tokat</td>
+
+</tr>
+
+
+
+<tr>
+<th>ali</th>
+<th>can</th>
+<th>Sivas</th>
+
+</tr>
+
+<tr>
+
+<th>hasan</th>
+<th>topcu</th>
+<th>çorum</th>
+
+</tr>
+
+
+
+</table>
+
+
+<!-- simdi html listeleme tekniklerini gorecez ol ve ul etıketleri ile li kullanılır nasıl kullanılır görelim -->
+
+<ol>
+
+<li>sinan</li>
+<li>sancar</li>
+<li>koçer</li>
+
+</ol>
+
+
+
+<ul>
+
+<li>sinan</li>
+<li>sancar</li>
+<li>koçer</li>
+
+
+</ul>
+
+<!-- simdide html de input ozellikleri(TEXT, PASSWORD, BUTTON, CHECKBOX, RADİO) ve text area ETİKETİNİ GÖRELİM ayrıca bunları bir form ile birlikte görelim -->
+
+<input type="text" id="s1" name="s2" value="sinan" placeholder="ismini gir">
+<br>
+
+<button onclick="window.location.href='http://www.mozilla.org/'">Mozilla Anasayfa</button>
+<br>
+
+<button type="checkbox" > </button>
+
+<br>
+
+
+ <input type="checkbox" name="cekbos">
+ 
+ 
+ <input type="checkbox" id="cekedilmis" name="cekedilen"
+         checked>
+ 
+
+ <br>
+ 
+
+<br>
+
+
+
+<form action="work.html" id="form1" method="get" >
+<label for="ad">Ad:</label>
+<input type="text" id="ad" name="isim" placeholder="adını gir" value="Sancar">
+<br>
+<label for="soyad">Soyad:</label>
+<input type="text" placeholder="soyadın" value="Kocer" id="soyad" name="soyisim">
+
+<br>
+<label for="sifre">Sifren:</label>
+<input type="password" placeholder="sifreni gir" id="sifre" name="passW">
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+<!-- asagıdakı button kodlarını outsıde olarak form etiketinin dısında tanımladık-->
+<!-- içinde tanımladıgımız zaman forma ıd vermemize ve button form ozelliginde bunu kullanmamıza gerek kalmaz -->
+<!--yANİ FORMU İÇİNDE TRAnımlasak böyle yazardık : "<button type="submit"  value="Submit">Gönder</button><br>" -->
+
+<button type="submit" form="form1"  value="Submit">Gönder</button><br>
+<button type="reset" form="form1" value="Reset">Temizle</button>
+
+<br> <br>
+
+
+
+<input type="radio" name="rayobut">
+<!-- <input type="radio" name="rayobut1" checked>  -->
+
+<input type="checkbox" name="cekbux" checked>
+
+<input type="checkbox" name="ceksizbux">
+
+
+<input type="button" name="düzbuton" value="takla">
+
+<button > BUTONUM</button>
+<br>
+
+
+<button><a href="work.html"> SinnaNNN</a></button>
+<br>
+<textarea placeholder="buraya birşeyler yaz"></textarea>
+
+<br>
+
+<!-- asagıda 4 satır 50 sütunluk bir textarea görüyoruz -->
+<textarea id="gözlem1" name="gözlemem2" rows="4" cols="50"></textarea>
+
+
+
+
+
+<br>
+
+
+
+<!-- asagıda bir resimi masaustunden sayfaya nasıl yuklerız onu gördük -->
+<!-- (work2.html sayfasında calısıyoruz, bu sayfadan sectiğimiz -"ftgr isimli"- resimi masaustunde3n alıyoruz seciyoruz, -->
+<!--yolla butonuna basıp work.html sayfasına gönderiyoruz)-->
+
+<form action="work.html" id="frm2" method="get">
+
+<label for="fotogrf">bir resim seç:</label>
+
+<input type="file"
+       id="fotogrf" name="ftgr"
+       accept="image/png, image/jpeg">
+	   
+	   <!-- <button type="submit" name="gönder" > Yolla </button>  -->
+
+</form>
+
+
+<button type="submit" name="gönder" form="frm2"> Yolla </button>
+
+
+
+
+<!-- Html Div Ve Span etiketleri -->
+<br>
+
+
+<div style="background-color:red"> sinan div örnek  </div>
+
+
+<span style="background-color:red"> sinan Span örnek  </span>
+
+
+
+
+</body>
+
+
+
+
+</html>
